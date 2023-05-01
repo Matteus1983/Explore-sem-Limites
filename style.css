@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    background: hsla(283, 47%, 97%, 1);
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+}
+header {
+    text-align: center;
+}
+header h1 {
+    color: hsla(320, 69%, 42%, 1);
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-top: 1.7rem;
+}
+header p {
+    color: hsla(244, 38%, 28%, 1);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 0.5rem 0 3.5rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto;
+    width: 42rem;
+    background: linear-gradient(hsla(242, 50%, 38%, 1) 0%, hsla(244, 38%, 28%, 1) 100%)
+}
+.planet {
+    background-color:hsla(0, 0%, 100%, 1);  
+    width: 33rem;
+    padding: 2.6rem 5.9rem 2.6rem 2.6rem ;
+    border-radius: 1.3rem;
+    text-align: start;
+    margin: 5.2rem 3.9rem;
+}
+.planet h2{
+    color: hsla(320, 69%, 42%, 1);
+    font-weight: 900;
+    font-size: 2.9rem;
+    line-height: 3.7rem;
+    margin: 3.3rem auto 1.9rem;
+}
+.planet p {
+    color:hsla(244, 38%, 28%, 1);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    width: 26rem;
+}
+footer {
+    margin: 0 auto;
+    width: 42rem;
+}
+footer fieldset legend {
+    color:hsla(320, 69%, 42%, 1);
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-align: start;
+    margin-bottom: 4rem;
+}
+footer fieldset{
+    border: none;
+    padding: 2rem;
+}
+footer #name {
+    background-image: url(/assets/vectorProfile.png);
+    background-repeat: no-repeat;
+    background-size: 1.3em;
+    background-position-x: 2rem;
+    background-position-y: 1rem;
+
+    width: 35rem;
+    height: 3rem;
+
+    margin-bottom: 2rem;
+    padding: 2rem 2rem 2rem 5rem;
+
+    border-radius: 1rem;
+    border: solid 1px hsla(244, 38%, 28%, 1);
+}
+footer #email {
+    background-image: url(/assets/vector@.png);
+    background-repeat: no-repeat;
+    background-position-x: 2rem;
+    background-position-y: 1rem;
+
+    width: 35rem;
+    height: 3rem;
+
+    padding: 2rem 2rem 2rem 5rem;
+    margin-bottom: 2rem;
+
+    border-radius: 1rem;
+    border: solid 1px hsla(244, 38%, 28%, 1);
+}
+footer #text {
+    border: solid 1px hsla(244, 38%, 28%, 1);
+    padding: 2rem;
+    width: 35rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+
+}
+input::placeholder {
+    color: hsla(244, 38%, 28%, 1);
+}
+textarea::placeholder {
+    color: hsla(244, 38%, 28%, 1);
+    font-size: 1.5rem;
+}
+footer form button {
+    background: linear-gradient(hsla(242, 50%, 38%, 1) 0%, hsla(244, 38%, 28%, 1) 100%);
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    margin-bottom: 10rem;
+}
+.company {
+    background: linear-gradient(hsla(242, 50%, 38%, 1) 0%, hsla(244, 38%, 28%, 1) 100%);
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 760px) {
+/* de 760px para cima */
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    header h1 {
+        font-size: 5.8rem;
+        line-height: 7.3rem;
+        margin-top: 15rem;
+        text-align: start;
+        
+    }
+    header p {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 10rem;
+        text-align: start;
+    }
+    .astronaut img {
+        height: 100%;
+    }
+    .title img {
+        display: flex;
+    }
+    .planets {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+    footer {
+        width: auto;
+        background-image: url(/assets/bolinhas.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    footer form {
+        margin-left: 10rem;
+    }
+
+}
